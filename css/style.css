@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+}
+form {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #c2c0c0;
+    border-radius: 8px;
+    background-color: #f1d3f4;
+}
+
+.class1{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.class1:focus{
+    border-color: #ff0066;
+    outline: none;
+    box-shadow: 0 0 5px rgba(221, 20, 140, 0.5);
+}
+
+form textarea {
+    height: 60px;
+}
+
+#input-submit{
+    width: 100%;
+    padding: 10px;
+    background-color: #d380ce;
+    color: white;
+    border: none;   
+    border-radius: 4px;
+    cursor: pointer;
+}

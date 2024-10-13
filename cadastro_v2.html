@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <h1>Cadastro de curso</h1>
+    <form action="/enviar" method="POST">
+        <p class="class1">Nome: <input type="text" name="nome" placeholder= "Nome"></p>
+        <p class="class1">Sobrenome: <input type="text" name="sobrenome" placeholder= "Sobrenome"></p>
+        <p class="class1">Email: <input type="email" name="sobrenome" placeholder= "Email"></p>
+        <p class="class1">Data de Nascimento: <input type="date" name="dataNascimento"></p>
+        
+        <label for="curso">Selecione seu Curso:</label></br>
+        <select class="class1" name="curso" required>
+            <option value="" disabled selected>Escolha uma opção</option>
+            <option value="engenharia">Engenharia</option>
+            <option value="medicina">Medicina</option>
+            <option value="direito">Direito</option>
+            <option value="ads">Ads</option>
+        </select>
+
+        <p>Escolha um turno:</p>
+        <label>
+            <input type="radio" name="turno" value="matutino" required> Matutino
+        </label><br>
+        <label>
+            <input type="radio" name="turno" value="vespertino" required> Vespertino
+        </label><br>
+        <label>
+            <input type="radio" name="turno" value="noturno" required> Noturno
+        </label>
+
+        <p>Disciplinas extras:</p>
+        <label>
+            <input type="checkbox" name="disciplina1" value="ingles"> Inglês
+        </label><br>
+        <label>
+            <input type="checkbox" name="disciplina2" value="informatica"> Informática
+        </label><br>
+        <label>
+            <input type="checkbox" name="disciplina3" value="matematica"> Matemática
+        </label>
+
+        <p>Observações:</p>
+        <textarea class="class1" name="observacoes"  placeholder="Digite suas observações aqui..."></textarea><br>
+        <br>
+        <input id="input-submit" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
